@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --inspect src/index.js",
-    "node-sass": "node-sass --watch src/resources/scss/ --output src/public/css/",
+    "node_sass": "node-sass --watch src/resources/scss/ --output src/public/css/",
     "prettier": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss}",
-    "lint-staged": "lint-staged"
+    "lint_staged": "lint-staged"
   },
   "repository": {
     "type": "git",
