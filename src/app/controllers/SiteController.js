@@ -15,6 +15,10 @@ class SiteController {
     search(req, res) {
         res.render('search');
     }
+
+    about(req, res){
+        res.render('about')
+    }
 }
 
 module.exports = new SiteController();
