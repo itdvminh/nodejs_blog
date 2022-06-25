@@ -16,8 +16,8 @@ class SiteController {
         res.render('search');
     }
 
-    about(req, res){
-        res.render('about')
+    about(req, res) {
+        res.render('about');
     }
 }
 
