@@ -17,12 +17,16 @@ class CourseController {
     }
 
     store(req, res, next) {
-        const formData = req.body
-        formData.image = 'https://i.ytimg.com/vi_webp/' + req.body.videoID + '/sddefault.webp'
-        const course = new Course(formData)
-        course.save()
-        .then(() => res.redirect('./'))
-        .catch(Error)
+        const formData = req.body;
+        formData.image =
+            'https://i.ytimg.com/vi_webp/' +
+            req.body.videoID +
+            '/sddefault.webp';
+        const course = new Course(formData);
+        course
+            .save()
+            .then(() => res.redirect('./'))
+            .catch(Error);
     }
 }
 
