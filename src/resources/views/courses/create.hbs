@@ -1,0 +1,40 @@
+<div class="mx-4">
+    <h1 style="text-align: center;">Thêm khóa học</h1>
+    <form method="post" action="/courses/store">
+
+        <div class="form-row mb-4">
+            <div class="col">
+                <label for="name">Tên khóa học</label>
+                <textarea type="text" class="form-control" placeholder="Tên khóa học" name="name"> </textarea>
+            </div>
+
+            <div class="col">
+                <label for="description">Mô tả</label>
+                <textarea class="form-control" placeholder="Mô tả" name="description"></textarea>
+            </div>
+
+
+        </div>
+
+        <div class="form-row mb-4">
+            
+
+            <div class="col-4">
+                <label for="videoID">YouTube link</label>
+                <input type="text" class="form-control" placeholder="Youtube" name="videoID">
+            </div>
+
+            <div class="col-4 ">
+                <label for="level">Mức độ</label>
+                <input type="text" class="form-control" placeholder="Mức độ" name="level">
+            </div>
+
+            <div class="col-4">
+                <label for="time">Thời lượng</label>
+                <input type="text" class="form-control" placeholder="Thời lượng" name="time">
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Thêm khóa học</button>
+    </form>
+</div>

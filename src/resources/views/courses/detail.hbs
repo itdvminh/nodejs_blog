@@ -1,0 +1,34 @@
+<head>
+    <style>
+        .fa {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="white-box text-center">
+                <iframe class="frame-video" width="100%" height="100%"
+                    src="https://www.youtube.com/embed/{{Course.videoID}}" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+                <button class="btn btn-primary mx-4" style="margin-top: 15%;">Học ngay</button>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <h4 class="box-title">{{Course.name}}</h4>
+            <p>{{Course.description}}</p>
+
+            <h3 class="box-title mt-5">Chi tiết khóa học</h3>
+            <ul class="list-unstyled">
+                <li><i class="fa fa-check text-success"></i>Trình độ {{Course.level}}</li>
+                <li><i class="fa fa-check text-success"></i>Tổng số <strong>{{Course.numberLesson}}</strong> bài học
+                </li>
+                <li><i class="fa fa-check text-success"></i>Thời lượng <strong>{{Course.time}}</strong></li>
+            </ul>
+        </div>
+    </div>
+</div>
