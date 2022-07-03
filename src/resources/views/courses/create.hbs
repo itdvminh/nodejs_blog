@@ -1,40 +1,23 @@
-<div class="mx-4">
-    <h1 style="text-align: center;">Thêm khóa học</h1>
-    <form method="post" action="/courses/store">
 
-        <div class="form-row mb-4">
-            <div class="col">
-                <label for="name">Tên khóa học</label>
-                <textarea type="text" class="form-control" placeholder="Tên khóa học" name="name"> </textarea>
-            </div>
-
-            <div class="col">
-                <label for="description">Mô tả</label>
-                <textarea class="form-control" placeholder="Mô tả" name="description"></textarea>
-            </div>
-
-
+<div class="m-4">
+    <h3>Thêm khóa học</h3>
+    <form action="/courses/store" method="post">
+        <div class="form-group">
+            <label for="name">Tên khóa học</label>
+            <input type="text" class="form-control" id="name" name="name">
         </div>
-
-        <div class="form-row mb-4">
-            
-
-            <div class="col-4">
-                <label for="videoID">YouTube link</label>
-                <input type="text" class="form-control" placeholder="Youtube" name="videoID">
-            </div>
-
-            <div class="col-4 ">
-                <label for="level">Mức độ</label>
-                <input type="text" class="form-control" placeholder="Mức độ" name="level">
-            </div>
-
-            <div class="col-4">
-                <label for="time">Thời lượng</label>
-                <input type="text" class="form-control" placeholder="Thời lượng" name="time">
-            </div>
+        <div class="form-group">
+            <label for="description">Mô tả khóa học</label>
+            <input type="text" class="form-control" id="description" name="description">
         </div>
-
+        <div class="form-group">
+            <label for="videoID">Video khóa học</label>
+            <input type="text" class="form-control" id="videoID" name="videoID">
+        </div>
+        <div class="form-group">
+            <label for="level">Trình độ khóa học</label>
+            <input type="text" class="form-control" id="level" name="level">
+        </div>
         <button type="submit" class="btn btn-primary">Thêm khóa học</button>
     </form>
 </div>

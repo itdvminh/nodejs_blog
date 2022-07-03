@@ -1,24 +1,15 @@
-<head>
-    <style>
-        .fa {
-            margin-right: 10px;
-        }
-    </style>
-</head>
-
 <div class="container">
     <div class="row mt-4">
-        <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="col-lg-5 col-md-6 col-sm-6">
             <div class="white-box text-center">
-                <iframe class="frame-video" width="100%" height="100%"
-                    src="https://www.youtube.com/embed/{{Course.videoID}}" title="YouTube video player" frameborder="0"
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/{{Course.videoID}}"
+                    title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
-                <button class="btn btn-primary mx-4" style="margin-top: 15%;">Học ngay</button>
+                    allowfullscreen></iframe>
+                    <button class="btn btn-primary mt-5">Học ngay</button>
             </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
+        <div class="col-lg-7 col-md-6 col-sm-6">
             <h4 class="box-title">{{Course.name}}</h4>
             <p>{{Course.description}}</p>
 
