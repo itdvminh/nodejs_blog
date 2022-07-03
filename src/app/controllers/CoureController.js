@@ -18,7 +18,8 @@ class CourseController {
 
     store(req, res, next) {
         const formData = req.body;
-        formData.image = 'http://img.youtube.com/vi/' + req.body.videoID + '/mqdefault.jpg'
+        formData.image =
+            'http://img.youtube.com/vi/' + req.body.videoID + '/mqdefault.jpg';
         const course = new Course(formData);
         course
             .save()
@@ -37,7 +38,8 @@ class CourseController {
     // [PUT]
     update(req, res, next) {
         const formData = req.body;
-        formData.image = 'http://img.youtube.com/vi/' + req.body.videoID + '/mqdefault.jpg'
+        formData.image =
+            'http://img.youtube.com/vi/' + req.body.videoID + '/mqdefault.jpg';
         Course.updateOne({ _id: req.params.id }, formData)
             .then(() => res.redirect('/me/stored/courses'))
             .catch(next);
@@ -45,7 +47,7 @@ class CourseController {
     delete(req, res, next) {
         Course.deleteOne({ _id: req.params.id })
             .then(() => res.redirect('back'))
-            .catch(next)
+            .catch(next);
     }
 }
 
