@@ -4,7 +4,6 @@ const {
 } = require('../../util/mongoose');
 
 class SiteController {
-    
     // [GET]    /
     index(req, res, next) {
         Course.find({})
