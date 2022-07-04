@@ -1,5 +1,6 @@
 
 .husky
+.vscode
 node_modules/
 src/resources/views/about.hbs
 src/myindex.js
